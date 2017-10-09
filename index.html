@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐播放器</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="main-left">
+				<p class="title">歌曲列表</p>
+				
+				<ul class="musiclist">
+					<li><span class="song">歌曲</span><i class="singer">歌手</i><b class="time">时间</b></li>
+				</ul>
+			</div>
+			<div class="main-right">
+				<div class="top-pic">
+					<div class="pic-bg">						
+						<div class="pic-center">						
+							<img src="imgs/img2.jpg"/>
+						</div>
+					</div>
+					<img src="imgs/cd_tou.png" class="cdt"/>
+				</div>
+				<div class="controlpanel">
+					<div class="music-name">
+						<p class="song">清明上河图</p>
+						<p class="singer-albums">歌手：<span class="singer">李玉刚</span>&nbsp;&nbsp;<span class="albums"><!--专辑:新贵妃醉酒--></span></p>
+					</div>
+					<div class="control-btn">
+						<div class="left">							
+							<span class="prev">&#xe60b;</span>
+							<span class="pause">&#xe60d;</span>
+							<span class="next">&#xe60f;</span>
+						</div>
+						<div class="right">							
+							<span class="random">&#xe607;</span>
+							<span class="refresh">&#xe60e;</span>
+							<span class="mute"><i>&#xe60a;</i><!--<b class="volume"><em class="volCover"></em></b>--></span>
+							<div class="volume">
+								<span class="volCover"></span>
+							</div>
+						</div>
+					</div>
+					<div class="progress">
+						<div class="time">
+							<span class="totalTime"><i class="minute">00</i>:<i class="second">00</i></span>/
+							<span class="currentTime"><i class="minute">00</i>:<i class="second">00</i></span>
+						</div>
+						<div class="progress-bar">
+							<span class="cover"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<audio src="music/李玉刚 - 清明上河图.mp3" class="player"></audio>
+		</div>
+	</body>
+</html>
